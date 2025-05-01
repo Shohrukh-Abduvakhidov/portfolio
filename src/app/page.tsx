@@ -129,6 +129,14 @@ export default function Home() {
 								>
 									<Link href='/projects'>My projects</Link>
 								</Button>
+								<Button
+									asChild
+									variant='outline'
+									size='lg'
+									className='gap-2 gradient-border'
+								>
+									<a href='/my-resume.pdf' download={"Shohrukh Abduvakhidov CV"}>My CV</a>
+								</Button>
 							</motion.div>
 
 							<motion.div
