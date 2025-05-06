@@ -3,6 +3,7 @@
 import { useState, useEffect } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
+import photo_cv from '@/app/assets/cv_photo.png'
 import { motion, useScroll, useTransform } from 'framer-motion'
 import {
 	ArrowRight,
@@ -67,18 +68,6 @@ const skills = [
 			'Создание отзывчивых и интерактивных пользовательских интерфейсов с React и Next.js',
 		icon: <Code className='h-8 w-8 text-primary' />,
 	},
-	{
-		title: 'UI/UX Design',
-		description:
-			'Создание красивых и интуитивно понятных пользовательских интерфейсов с современными принципами дизайна',
-		icon: <Palette className='h-8 w-8 text-primary' />,
-	},
-	{
-		title: 'Full Stack',
-		description:
-			'Разработка полноценных веб-приложений с интеграцией фронтенда и бэкенда',
-		icon: <Layers className='h-8 w-8 text-primary' />,
-	},
 ]
 
 export default function Home() {
@@ -115,7 +104,7 @@ export default function Home() {
 							<div className='relative w-24 h-24 rounded-full bg-gradient-to-r from-indigo-500 via-blue-500 to-cyan-500 p-1 glow'>
 								<div className='w-full h-full rounded-full bg-background flex items-center justify-center overflow-hidden'>
 									<Image
-										src='/placeholder.svg?height=100&width=100'
+										src={photo_cv}
 										alt='Abduvakhidov Shohrukh'
 										width={100}
 										height={100}

@@ -37,37 +37,16 @@ const skills = [
 const timeline = [
 	{
 		id: 1,
-		date: '2020 - Настоящее время',
+		date: '2025 - Настоящее время',
 		title: 'Frontend Developer',
-		company: 'Tech Solutions',
+		company: 'Soft Club academy',
 		description:
 			'Разработка современных веб-приложений с использованием React, Next.js и других современных технологий.',
 		icon: <Briefcase className='h-5 w-5' />,
 		type: 'work',
 	},
-	{
-		id: 2,
-		date: '2018 - 2020',
-		title: 'Junior Web Developer',
-		company: 'Digital Agency',
-		description:
-			'Создание отзывчивых веб-сайтов и приложений с использованием HTML, CSS и JavaScript.',
-		icon: <Briefcase className='h-5 w-5' />,
-		type: 'work',
-	},
-	{
-		id: 3,
-		date: '2016 - 2020',
-		title: 'Бакалавр компьютерных наук',
-		company: 'Университет технологий',
-		description:
-			'Изучение основ программирования, алгоритмов, структур данных и веб-разработки.',
-		icon: <GraduationCap className='h-5 w-5' />,
-		type: 'education',
-	},
 ]
 
-// Данные о личных интересах
 const interests = [
 	{
 		title: 'Программирование',
