@@ -35,6 +35,8 @@
     "readyToSee": "Ready to see it in action?",
     "visit": "Visit",
     "sourceCode": "Source Code",
+    "challenge": "Challenge",
+    "solution": "Solution",
     "educrm": {
       "type": "Production SaaS / CRM",
       "tagline": "CRM platform for educational centers that centralizes academic management, scheduling, finances and analytics.",
@@ -220,6 +222,94 @@
         "AIConversationDesc": "Interactive conversation with Omuz AI",
         "AILearningSessionDesc": "Detailed AI-assisted learning conversation"
       }
+    },
+    "greenWheels": {
+      "type": "Electric Vehicle Dealership Website",
+      "tagline": "A modern electric vehicle dealership platform with a searchable catalog, advanced filtering and detailed vehicle presentation.",
+      "description": "Green Wheels.tj is a modern automotive web platform designed for browsing and discovering electric vehicles in Tajikistan. The website provides a structured vehicle catalog where users can explore available cars, filter the collection and open dedicated vehicle pages with images, pricing and technical specifications. The project focuses on creating a premium automotive browsing experience through strong visual hierarchy, responsive layouts, multilingual support and both light and dark interface themes.",
+      "overview": "Project Overview",
+      "keyCapabilities": "Key Features",
+      "galleryTitle": "Project Gallery",
+      "galleryDesc": "Explore the core interfaces and user experience.",
+      "techStack": "Tech Stack",
+      "techDesc": "Technologies and tools used to build the platform.",
+      "featureGroups": {
+        "core": {
+          "title": "Key Features"
+        }
+      },
+      "features": {
+        "vehicleCatalog": {
+          "title": "Vehicle Catalog",
+          "description": "Browse available electric vehicles through a structured catalog."
+        },
+        "advancedFiltering": {
+          "title": "Advanced Filtering",
+          "description": "Filter vehicles by relevant categories and characteristics."
+        },
+        "vehicleDetails": {
+          "title": "Vehicle Detail Pages",
+          "description": "Dedicated pages provide pricing, model information and key specifications."
+        },
+        "vehicleGallery": {
+          "title": "Vehicle Gallery",
+          "description": "Browse multiple vehicle images directly from the detail page."
+        },
+        "technicalSpecs": {
+          "title": "Technical Specifications",
+          "description": "Important information such as battery capacity, driving range and power is presented in a clear format."
+        },
+        "availability": {
+          "title": "Availability Status",
+          "description": "Vehicle cards clearly communicate whether a model is currently available."
+        },
+        "multilingual": {
+          "title": "Multilingual Interface",
+          "description": "The website supports multiple interface languages."
+        },
+        "themeSystem": {
+          "title": "Light & Dark Themes",
+          "description": "Users can switch between light and dark visual themes."
+        },
+        "responsiveDesign": {
+          "title": "Responsive Design",
+          "description": "The interface adapts across desktop, tablet and mobile devices."
+        },
+        "contactExperience": {
+          "title": "Contact Experience",
+          "description": "Dedicated contact sections provide a clear path for potential customers to reach the dealership."
+        }
+      },
+      "gallery": {
+        "Homepage": "Homepage",
+        "HomepageDesc": "Main dealership landing page introducing Green Wheels and electric mobility.",
+        "Vehicle Catalog": "Vehicle Catalog",
+        "VehicleCatalogDesc": "Vehicle catalog with filtering controls and available vehicle cards.",
+        "Vehicle Details": "Vehicle Details",
+        "VehicleDetailsDesc": "Dedicated vehicle page with gallery, price and technical specifications.",
+        "Featured Vehicles": "Featured Vehicles",
+        "FeaturedVehiclesDesc": "Vehicle cards presenting availability, pricing, driving range and power.",
+        "Contact": "Contact",
+        "ContactDesc": "Dedicated contact experience for dealership inquiries."
+      },
+      "challengesTitle": "Challenges & Solutions",
+      "challenges": {
+        "responsiveCatalog": {
+          "title": "Responsive Vehicle Catalog",
+          "challenge": "Vehicle cards contain large images and technical information while needing to remain readable across different screen sizes.",
+          "solution": "Created responsive card layouts and adaptive grids so vehicle data remains structured on desktop and smaller devices."
+        },
+        "detailPresentation": {
+          "title": "Vehicle Detail Presentation",
+          "challenge": "Presenting many vehicle specifications without overwhelming the user.",
+          "solution": "Separated the main vehicle information, pricing, gallery and technical specifications into clear visual groups."
+        },
+        "multilingualUX": {
+          "title": "Multilingual UX",
+          "challenge": "Keeping navigation and content structure consistent across languages.",
+          "solution": "Used a centralized localization approach so interface text can switch languages while preserving the same layout and interaction model."
+        }
+      }
     }
   },
   "services": {
@@ -242,7 +332,8 @@
     "frontend": "Frontend",
     "backend": "Backend",
     "database": "Database",
-    "tools": "Tools"
+    "tools": "Tools",
+    "platform": "Platform"
   },
   "experience": {
     "title": "Experience & Education",

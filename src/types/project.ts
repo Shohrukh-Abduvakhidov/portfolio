@@ -26,9 +26,10 @@ export interface Project {
   businessModel?: string;
   featured: boolean;
   stack: string[];
+  stackGroups?: { groupName: string; technologies: string[] }[];
   features?: ProjectFeature[];
   featureGroups?: ProjectFeatureGroup[];
-  technicalChallenges?: { title: string; description?: string }[];
+  technicalChallenges?: { id?: string; title: string; description?: string; challengeText?: string; solutionText?: string }[];
   cover: string;
   images: { src: string; label: string; description?: string }[];
   liveUrl?: string;

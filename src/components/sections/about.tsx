@@ -28,7 +28,7 @@ export default function About() {
 
             <div className="mt-4">
               <Button className="rounded-full gap-2" asChild>
-                <Link href="/cv/shohrukh-cv.pdf" target="_blank" rel="noreferrer">
+                <Link href="/cv/Abduvakhidov_Shohrukh_CV.pdf" target="_blank" rel="noreferrer">
                   Download CV <ArrowRight className="w-4 h-4" />
                 </Link>
               </Button>

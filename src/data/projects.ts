@@ -150,4 +150,68 @@ export const projects: Project[] = [
     liveUrl: "https://ilm-omuz.vercel.app",
     githubUrl: "private",
   },
+  {
+    slug: "green-wheels",
+    translationKey: "greenWheels",
+    title: "Green Wheels.tj",
+    tagline: "Modern electric vehicle dealership platform with catalog, filtering and detailed vehicle pages.",
+    description: "Green Wheels.tj is a modern automotive web platform designed for browsing and discovering electric vehicles in Tajikistan. The website provides a structured vehicle catalog where users can explore available cars, filter the collection and open dedicated vehicle pages with images, pricing and technical specifications.",
+    role: "Full-Stack Developer",
+    type: "Automotive Platform",
+    status: "Production",
+    featured: false,
+    stack: [
+      "Next.js",
+      "React",
+      "TypeScript",
+      "Tailwind CSS",
+      "Node.js",
+      "Express.js",
+      "PostgreSQL",
+      "REST API",
+      "Responsive Design",
+      "i18n",
+      "Git",
+      "Vercel"
+    ],
+    stackGroups: [
+      { groupName: "Frontend", technologies: ["Next.js", "React", "TypeScript", "Tailwind CSS"] },
+      { groupName: "Backend", technologies: ["Node.js", "Express.js", "REST API"] },
+      { groupName: "Database", technologies: ["PostgreSQL"] },
+      { groupName: "Platform", technologies: ["Vercel", "Git", "i18n"] }
+    ],
+    technicalChallenges: [
+      { id: "responsiveCatalog", title: "Responsive Vehicle Catalog" },
+      { id: "detailPresentation", title: "Vehicle Detail Presentation" },
+      { id: "multilingualUX", title: "Multilingual UX" }
+    ],
+    featureGroups: [
+      {
+        id: "core",
+        groupName: "Key Features",
+        features: [
+          { id: "vehicleCatalog", title: "Vehicle Catalog", description: "" },
+          { id: "advancedFiltering", title: "Advanced Filtering", description: "" },
+          { id: "vehicleDetails", title: "Vehicle Detail Pages", description: "" },
+          { id: "vehicleGallery", title: "Vehicle Image Gallery", description: "" },
+          { id: "technicalSpecs", title: "Technical Specifications", description: "" },
+          { id: "availability", title: "Availability Status", description: "" },
+          { id: "multilingual", title: "Multilingual Interface", description: "" },
+          { id: "themeSystem", title: "Light & Dark Themes", description: "" },
+          { id: "responsiveDesign", title: "Responsive Design", description: "" },
+          { id: "contactExperience", title: "Contact Experience", description: "" },
+        ],
+      },
+    ],
+    cover: "/projects/green-wheels/01-home.png",
+    images: [
+      { src: "/projects/green-wheels/01-home.png", label: "Homepage" },
+      { src: "/projects/green-wheels/05-catalog.png", label: "Vehicle Catalog" },
+      { src: "/projects/green-wheels/04-car-details.png", label: "Vehicle Details" },
+      { src: "/projects/green-wheels/02-featured-cars.png", label: "Featured Vehicles" },
+      { src: "/projects/green-wheels/03-contact.png", label: "Contact" }
+    ],
+    liveUrl: "https://green-wheels-tj.vercel.app/ru",
+    githubUrl: "private",
+  },
 ];

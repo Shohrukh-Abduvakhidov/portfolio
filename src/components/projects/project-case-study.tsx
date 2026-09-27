@@ -206,13 +206,32 @@ export function ProjectCaseStudy({ project, nextProject }: ProjectCaseStudyProps
           <Reveal>
             <div className="space-y-6">
               <h2 className="text-3xl font-bold">{t(`projects.${project.translationKey || project.slug}.techStack`) || "Architecture & Tech Stack"}</h2>
-              <div className="flex flex-wrap gap-2">
-                {project.stack.map((tech) => (
-                  <span key={tech} className="px-4 py-2 rounded-xl bg-card border border-border text-sm font-semibold shadow-sm">
-                    {tech}
-                  </span>
-                ))}
-              </div>
+              
+              {project.stackGroups && project.stackGroups.length > 0 ? (
+                <div className="space-y-4">
+                  {project.stackGroups.map((group, idx) => (
+                    <div key={idx} className="flex flex-col gap-2">
+                      <span className="text-sm font-bold uppercase tracking-wider text-muted-foreground">{t(`skills.${group.groupName.toLowerCase()}`) || group.groupName}</span>
+                      <div className="flex flex-wrap gap-2">
+                        {group.technologies.map((tech) => (
+                          <span key={tech} className="px-4 py-2 rounded-xl bg-card border border-border text-sm font-semibold shadow-sm">
+                            {tech}
+                          </span>
+                        ))}
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              ) : (
+                <div className="flex flex-wrap gap-2">
+                  {project.stack.map((tech) => (
+                    <span key={tech} className="px-4 py-2 rounded-xl bg-card border border-border text-sm font-semibold shadow-sm">
+                      {tech}
+                    </span>
+                  ))}
+                </div>
+              )}
+              
               <p className="text-muted-foreground leading-relaxed mt-4">
                 {t(`projects.${project.translationKey || project.slug}.techDesc`)}
               </p>
@@ -223,14 +242,48 @@ export function ProjectCaseStudy({ project, nextProject }: ProjectCaseStudyProps
           {project.technicalChallenges && project.technicalChallenges.length > 0 && (
             <Reveal>
               <div className="space-y-6">
-                <h2 className="text-3xl font-bold">{t(`projects.${project.translationKey || project.slug}.challenges`) || "Engineering Challenges"}</h2>
-                <div className="flex flex-wrap gap-3">
-                  {project.technicalChallenges.map((challenge, idx) => (
-                    <div key={idx} className="px-4 py-2 rounded-full bg-secondary/50 border border-border text-sm font-medium text-foreground">
-                      {challenge.title}
-                    </div>
-                  ))}
-                </div>
+                <h2 className="text-3xl font-bold">{t(`projects.${project.translationKey || project.slug}.challengesTitle`) || t(`projects.${project.translationKey || project.slug}.challenges`) || "Engineering Challenges"}</h2>
+                
+                {/* Check if any challenge has an ID or challengeText to render detailed view */}
+                {project.technicalChallenges.some(c => c.id || c.challengeText) ? (
+                  <div className="space-y-6">
+                    {project.technicalChallenges.map((challenge, idx) => (
+                      <div key={idx} className="space-y-2 bg-secondary/10 p-5 rounded-2xl border border-border/50">
+                        <h3 className="font-bold text-lg text-foreground">
+                          {challenge.id 
+                            ? t(`projects.${project.translationKey || project.slug}.challenges.${challenge.id}.title`)
+                            : challenge.title}
+                        </h3>
+                        <div className="space-y-3 mt-3">
+                          <div>
+                            <span className="text-sm font-bold uppercase tracking-wider text-primary block mb-1">{t("projects.challenge") || "Challenge"}</span>
+                            <p className="text-muted-foreground text-sm leading-relaxed">
+                              {challenge.id 
+                                ? t(`projects.${project.translationKey || project.slug}.challenges.${challenge.id}.challenge`)
+                                : challenge.challengeText}
+                            </p>
+                          </div>
+                          <div>
+                            <span className="text-sm font-bold uppercase tracking-wider text-green-500 block mb-1">{t("projects.solution") || "Solution"}</span>
+                            <p className="text-muted-foreground text-sm leading-relaxed">
+                              {challenge.id 
+                                ? t(`projects.${project.translationKey || project.slug}.challenges.${challenge.id}.solution`)
+                                : challenge.solutionText}
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                ) : (
+                  <div className="flex flex-wrap gap-3">
+                    {project.technicalChallenges.map((challenge, idx) => (
+                      <div key={idx} className="px-4 py-2 rounded-full bg-secondary/50 border border-border text-sm font-medium text-foreground">
+                        {challenge.title}
+                      </div>
+                    ))}
+                  </div>
+                )}
               </div>
             </Reveal>
           )}

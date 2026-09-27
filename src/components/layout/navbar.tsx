@@ -11,6 +11,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { LanguageSelector } from "@/components/layout/language-selector";
 import { useLanguage } from "@/i18n/LanguageContext";
 import { useSectionNavigation } from "@/hooks/use-section-navigation";
+import { BrandLogo } from "@/components/ui/brand-logo";
 
 export default function Navbar() {
   const [isScrolled, setIsScrolled] = React.useState(false);
@@ -88,10 +89,13 @@ export default function Navbar() {
     >
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
         {/* Logo */}
-        <a href="/" onClick={(e) => handleNavClick(e, "home")} className="font-bold text-xl tracking-tighter flex items-center gap-2 group">
-          <div className="w-8 h-8 rounded-lg bg-primary text-primary-foreground flex items-center justify-center group-hover:scale-105 transition-transform">
-            SA
-          </div>
+        <a 
+          href="/" 
+          onClick={(e) => handleNavClick(e, "home")} 
+          aria-label="Shohrukh Abduvakhidov — Home"
+          className="flex items-center gap-2"
+        >
+          <BrandLogo size="md" />
         </a>
 
         {/* Desktop Nav */}
@@ -151,8 +155,12 @@ export default function Navbar() {
             className="fixed inset-0 z-50 bg-background md:hidden flex flex-col overflow-y-auto"
           >
             <div className="flex items-center justify-between p-4 border-b border-border shrink-0">
-              <a href="/" onClick={(e) => handleNavClick(e, "home")} className="font-bold text-xl tracking-tighter">
-                SA
+              <a 
+                href="/" 
+                onClick={(e) => handleNavClick(e, "home")} 
+                aria-label="Shohrukh Abduvakhidov — Home"
+              >
+                <BrandLogo size="sm" />
               </a>
               <Button variant="ghost" size="icon" onClick={() => setMobileMenuOpen(false)}>
                 <X className="w-5 h-5" />

@@ -32,7 +32,7 @@ export default function Contact() {
             
             {/* Email */}
             <a 
-              href="mailto:shohruhabduvohidov911@gmail.com" 
+              href="mailto:vaxidov011@gmail.com" 
               className="flex items-center justify-between p-6 rounded-2xl border border-border bg-background hover:border-primary/50 hover:bg-secondary/20 transition-all group"
             >
               <div className="flex items-center gap-4">

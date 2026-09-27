@@ -4,6 +4,7 @@ import Link from "next/link";
 import { Code, MessageCircle, Mail } from "lucide-react";
 import { useLanguage } from "@/i18n/LanguageContext";
 import { useSectionNavigation } from "@/hooks/use-section-navigation";
+import { BrandLogo } from "@/components/ui/brand-logo";
 
 export default function Footer() {
   const { t } = useLanguage();
@@ -17,9 +18,9 @@ export default function Footer() {
   return (
     <footer className="border-t border-border mt-24">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-8 flex flex-col md:flex-row justify-between items-center gap-4">
-        <div className="flex items-center gap-2">
-          <span className="font-bold text-lg tracking-tighter">SA</span>
-          <span className="text-sm text-muted-foreground">Shohrukh Abduvakhidov</span>
+        <div className="flex items-center gap-3">
+          <BrandLogo size="sm" />
+          <span className="text-sm font-semibold text-foreground">Shohrukh Abduvakhidov</span>
         </div>
         
         <nav className="flex gap-6 text-sm font-medium text-muted-foreground">
@@ -36,7 +37,7 @@ export default function Footer() {
           <a href="https://t.me/SHOHRUKH_011" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-foreground transition-colors">
             <MessageCircle className="w-4 h-4" />
           </a>
-          <a href="mailto:shohruhabduvohidov911@gmail.com" className="text-muted-foreground hover:text-foreground transition-colors">
+          <a href="mailto:vaxidov011@gmail.com" className="text-muted-foreground hover:text-foreground transition-colors">
             <Mail className="w-4 h-4" />
           </a>
         </div>
