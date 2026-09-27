@@ -1,0 +1,36 @@
+export interface ProjectFeature {
+  id?: string;
+  title: string;
+  description: string;
+  icon?: string;
+}
+
+export interface ProjectFeatureGroup {
+  id?: string;
+  groupName: string;
+  features: ProjectFeature[];
+}
+
+export interface Project {
+  slug: string;
+  translationKey?: string;
+  title: string;
+  tagline: string;
+  description: string;
+  role: string;
+  type?: string;
+  status: string;
+  timeline?: string;
+  team?: string;
+  users?: string;
+  businessModel?: string;
+  featured: boolean;
+  stack: string[];
+  features?: ProjectFeature[];
+  featureGroups?: ProjectFeatureGroup[];
+  technicalChallenges?: { title: string; description?: string }[];
+  cover: string;
+  images: { src: string; label: string; description?: string }[];
+  liveUrl?: string;
+  githubUrl?: string; // "private" for lock icon
+}

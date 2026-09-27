@@ -1,0 +1,153 @@
+import { Project } from "@/types/project";
+
+export const projects: Project[] = [
+  {
+    slug: "educrm",
+    title: "EduCRM",
+    tagline: "CRM platform for educational centers that centralizes academic management, scheduling, finances and analytics.",
+    description:
+      "EduCRM is a production CRM platform built for educational centers. It centralizes student management, academic operations, scheduling, payments, finances and analytics in one system. The platform is used by real education centers and operates as a subscription-based product.",
+    role: "Full-Stack Developer",
+    type: "SaaS / CRM",
+    status: "Production",
+    users: "Real educational centers",
+    businessModel: "Subscription",
+    featured: true,
+    stack: [
+      "React",
+      "TypeScript",
+      "Tailwind CSS",
+      "shadcn/ui",
+      "Node.js",
+      "Express",
+      "PostgreSQL",
+      "JWT",
+      "RTK Query",
+      "i18next",
+      "PM2",
+    ],
+    featureGroups: [
+      {
+        groupName: "Academic Management",
+        features: [
+          { title: "Students", description: "Complete student profiles" },
+          { title: "Groups", description: "Class and group organization" },
+          { title: "Journal", description: "Digital academic journal" },
+          { title: "Attendance", description: "Daily tracking" },
+          { title: "Grades", description: "Performance metrics" },
+          { title: "Exams", description: "MMT / Exam management" },
+        ],
+      },
+      {
+        groupName: "Operations",
+        features: [
+          { title: "Scheduling", description: "Interactive timetables" },
+          { title: "Parents", description: "Parent communication" },
+          { title: "Applications", description: "Student lead tracking" },
+          { title: "Notifications", description: "System alerts" },
+          { title: "PWA", description: "Installable web app" },
+        ],
+      },
+      {
+        groupName: "Finance",
+        features: [
+          { title: "Payments", description: "Tuition tracking" },
+          { title: "Expenses", description: "Operational costs" },
+          { title: "Income", description: "Additional revenue streams" },
+          { title: "Discounts", description: "Scholarships and reductions" },
+          { title: "Financial Analytics", description: "Revenue reports" },
+        ],
+      },
+      {
+        groupName: "Reporting",
+        features: [
+          { title: "Analytics", description: "Center-wide metrics" },
+          { title: "Excel Export", description: "Downloadable reports" },
+        ],
+      },
+    ],
+    technicalChallenges: [
+      { title: "Role-based access" },
+      { title: "Financial calculations" },
+      { title: "Multi-academy architecture" },
+      { title: "Complex academic data" },
+      { title: "PWA & notifications" },
+      { title: "Internationalization" },
+    ],
+    cover: "/projects/educrm/01-header-image.png",
+    images: [
+      { src: "/projects/educrm/01-dashboard.png", label: "Dashboard" },
+      { src: "/projects/educrm/02-students.png", label: "Students" },
+      { src: "/projects/educrm/03-group-details.png", label: "Group Details" },
+      { src: "/projects/educrm/04-group-students.png", label: "Group Students" },
+      { src: "/projects/educrm/05-journal.png", label: "Journal" },
+      { src: "/projects/educrm/06-finance.png", label: "Finance" },
+      { src: "/projects/educrm/07-schedule.png", label: "Schedule" },
+      { src: "/projects/educrm/08-login.png", label: "Login" },
+    ],
+    liveUrl: "https://educrm.tj",
+    githubUrl: "private",
+  },
+  {
+    slug: "ilm-omuz",
+    translationKey: "ilmOmuz",
+    title: "ILM OMUZ",
+    tagline: "An educational platform where students can learn, take courses, read lessons, solve programming tasks and complete quizzes in one environment.",
+    description:
+      "ILM OMUZ is an educational platform designed to bring learning, practice and AI assistance into a single environment. Students can join learning groups, study structured course materials, read lectures, complete quizzes and solve programming tasks. The platform also includes Omuz AI — an AI learning assistant powered by OpenAI models. Students can communicate with the assistant through regular chat, voice interaction and Live Mode. A persistent AI mascot is also available throughout the platform to provide contextual help when needed.",
+    role: "Full-Stack Developer",
+    type: "Educational platform",
+    status: "Production",
+    featured: false,
+    stack: [
+      "React",
+      "Typescript",
+      "CSS",
+      "Node.js",
+      "Express",
+      "Supabase",
+      "OpenAI"
+    ],
+    featureGroups: [
+      {
+        id: "core",
+        groupName: "Core Features",
+        features: [
+          { id: "studentDashboard", title: "Student Dashboard", description: "" },
+          { id: "learningGroups", title: "Learning Groups", description: "" },
+          { id: "courses", title: "Courses", description: "" },
+          { id: "lectures", title: "Lectures", description: "" },
+          { id: "quizzes", title: "Quizzes & Tests", description: "" },
+          { id: "programmingTasks", title: "Programming Tasks", description: "" },
+          { id: "codeEditor", title: "Integrated Code Editor", description: "" },
+          { id: "examMode", title: "Exam Mode", description: "" },
+          { id: "statistics", title: "Learning Statistics", description: "" },
+          { id: "studentWallet", title: "Student Wallet", description: "" },
+        ],
+      },
+      {
+        id: "ai",
+        groupName: "AI Integration",
+        features: [
+          { id: "omuzAI", title: "Omuz AI Assistant", description: "" },
+          { id: "aiChat", title: "AI Conversations", description: "" },
+          { id: "voiceMode", title: "Voice Interaction", description: "" },
+          { id: "liveMode", title: "Live Mode", description: "" },
+          { id: "aiMascot", title: "AI Mascot", description: "" },
+        ],
+      },
+    ],
+    cover: "/projects/ilm-omuz/01-header-image.png",
+    images: [
+      { src: "/projects/ilm-omuz/02-login.png", label: "Authentication" },
+      { src: "/projects/ilm-omuz/03-group.png", label: "Group Workspace" },
+      { src: "/projects/ilm-omuz/04-omuz-ai-widget.png", label: "Omuz AI Assistant" },
+      { src: "/projects/ilm-omuz/05-wallet.png", label: "Wallet" },
+      { src: "/projects/ilm-omuz/06-omuz-ai-home.png", label: "Omuz AI" },
+      { src: "/projects/ilm-omuz/07-omuz-ai-chat.png", label: "AI Conversation" },
+      { src: "/projects/ilm-omuz/08-omuz-ai-chat-detail.png", label: "AI Learning Session" }
+    ],
+    liveUrl: "https://ilm-omuz.vercel.app",
+    githubUrl: "private",
+  },
+];

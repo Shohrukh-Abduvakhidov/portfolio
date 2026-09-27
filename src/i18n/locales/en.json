@@ -1,0 +1,275 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "projects": "Projects",
+    "experience": "Experience",
+    "skills": "Skills",
+    "contact": "Contact",
+    "letsTalk": "Let's talk"
+  },
+  "hero": {
+    "role": "Full-Stack Developer",
+    "description": "I build production-ready web applications and digital products from frontend interfaces to scalable backends.",
+    "cta": "View My Work",
+    "availability": "Available for new opportunities"
+  },
+  "metrics": {
+    "projects": "3+ Major Projects",
+    "experience": "2+ Years Building Projects",
+    "status": "Production Experience"
+  },
+  "about": {
+    "title": "About Me",
+    "description1": "I am a Full-Stack Developer with a strong foundation in modern web technologies, specializing in building high-performance, scalable, and beautifully designed applications.",
+    "description2": "My approach combines clean architecture on the backend with polished, accessible interfaces on the frontend. I enjoy solving complex engineering problems and transforming them into seamless user experiences."
+  },
+  "projects": {
+    "sectionTitle": "Selected Work",
+    "featured": "Featured Projects",
+    "viewCaseStudy": "View Case Study",
+    "liveSite": "Live Site",
+    "privateRepository": "Private Repository",
+    "upNext": "Up Next",
+    "backToProjects": "Back to Projects",
+    "readyToSee": "Ready to see it in action?",
+    "visit": "Visit",
+    "sourceCode": "Source Code",
+    "educrm": {
+      "type": "Production SaaS / CRM",
+      "tagline": "CRM platform for educational centers that centralizes academic management, scheduling, finances and analytics.",
+      "description": "EduCRM is a production CRM platform built for educational centers. It centralizes student management, academic operations, scheduling, payments, finances and analytics in one system. The platform is used by real education centers and operates as a subscription-based product.",
+      "users": "Real educational centers",
+      "overview": "Project Overview",
+      "problemTitle": "The Problem",
+      "problem": "Educational centers struggle to manage students, groups, schedules, attendance, academic performance, and finances using disconnected spreadsheets and generic tools. This leads to administrative overhead, lost revenue, and poor communication with parents.",
+      "solutionTitle": "The Solution",
+      "solution": "EduCRM centralizes all academy operations into a single, cohesive platform. It automates routine tasks, provides real-time financial oversight, and offers a dedicated portal for academic tracking, allowing centers to focus on education rather than administration.",
+      "keyCapabilities": "Key Capabilities",
+      "galleryTitle": "Product Gallery",
+      "galleryDesc": "Explore the core interfaces and user experience.",
+      "techStack": "Architecture & Tech Stack",
+      "techDesc": "Selected for performance, scalability, and maintainability to support production loads across multiple active academies.",
+      "challenges": "Engineering Challenges",
+      "features": {
+        "Academic Management": "Academic Management",
+        "Operations": "Operations",
+        "Finance": "Finance",
+        "Reporting": "Reporting",
+        "Students": "Students",
+        "StudentsDesc": "Complete student profiles",
+        "Groups": "Groups",
+        "GroupsDesc": "Class and group organization",
+        "Journal": "Journal",
+        "JournalDesc": "Digital academic journal",
+        "Attendance": "Attendance",
+        "AttendanceDesc": "Daily tracking",
+        "Grades": "Grades",
+        "GradesDesc": "Performance metrics",
+        "Exams": "Exams",
+        "ExamsDesc": "MMT / Exam management",
+        "Scheduling": "Scheduling",
+        "SchedulingDesc": "Interactive timetables",
+        "Parents": "Parents",
+        "ParentsDesc": "Parent communication",
+        "Applications": "Applications",
+        "ApplicationsDesc": "Student lead tracking",
+        "Notifications": "Notifications",
+        "NotificationsDesc": "System alerts",
+        "PWA": "PWA",
+        "PWADesc": "Installable web app",
+        "Payments": "Payments",
+        "PaymentsDesc": "Tuition tracking",
+        "Expenses": "Expenses",
+        "ExpensesDesc": "Operational costs",
+        "Income": "Income",
+        "IncomeDesc": "Additional revenue streams",
+        "Discounts": "Discounts",
+        "DiscountsDesc": "Scholarships and reductions",
+        "Financial Analytics": "Financial Analytics",
+        "FinancialAnalyticsDesc": "Revenue reports",
+        "Analytics": "Analytics",
+        "AnalyticsDesc": "Center-wide metrics",
+        "Excel Export": "Excel Export",
+        "ExcelExportDesc": "Downloadable reports"
+      },
+      "gallery": {
+        "Dashboard": "Dashboard",
+        "Students": "Students",
+        "Group Details": "Group Details",
+        "Group Students": "Group Students",
+        "Journal": "Journal",
+        "Finance": "Finance",
+        "Schedule": "Schedule",
+        "Login": "Login",
+        "DashboardDesc": "Academy overview and key metrics",
+        "StudentsDesc": "Comprehensive student management",
+        "GroupDetailsDesc": "Specific group information",
+        "GroupStudentsDesc": "Students enrolled in group",
+        "JournalDesc": "Daily academic tracking",
+        "FinanceDesc": "Financial oversight",
+        "ScheduleDesc": "Calendar and scheduling",
+        "LoginDesc": "Secure authentication"
+      }
+    },
+    "ilmOmuz": {
+      "type": "Educational platform",
+      "tagline": "An educational platform where students can learn, take courses, read lessons, solve programming tasks and complete quizzes in one environment.",
+      "description": "ILM OMUZ is an educational platform designed to bring learning, practice and AI assistance into a single environment. Students can join learning groups, study structured course materials, read lectures, complete quizzes and solve programming tasks. The platform also includes Omuz AI — an AI learning assistant powered by OpenAI models. Students can communicate with the assistant through regular chat, voice interaction and Live Mode. A persistent AI mascot is also available throughout the platform to provide contextual help when needed.",
+      "overview": "Project Overview",
+      "keyCapabilities": "Core Features",
+      "galleryTitle": "Product Gallery",
+      "galleryDesc": "Explore the core interfaces and user experience.",
+      "techStack": "Architecture & Tech Stack",
+      "techDesc": "Selected for performance, scalability, and seamless AI integration.",
+      "omuzAi": "Omuz AI",
+      "omuzAiDesc": "A key differentiator of Ilm_Omuz is the deeply integrated AI learning assistant. Designed to support educational conversations and answer questions contextually, Omuz AI provides interactive guidance without breaking the user's flow.",
+      "aiPoints": {
+        "learning": "AI-assisted learning:",
+        "learningDesc": "Real-time support during study sessions.",
+        "qa": "Question answering:",
+        "qaDesc": "Contextual answers to course material.",
+        "conv": "Educational conversations:",
+        "convDesc": "Detailed AI-assisted dialogue to clarify concepts.",
+        "ui": "Interactive assistant UI:",
+        "uiDesc": "A seamless widget and dedicated full-screen chat interface."
+      },
+      "featureGroups": {
+        "core": {
+          "title": "Core Features"
+        },
+        "ai": {
+          "title": "AI Integration"
+        }
+      },
+      "features": {
+        "studentDashboard": {
+          "title": "Student Dashboard",
+          "description": "A personal learning workspace with access to courses, groups and progress."
+        },
+        "learningGroups": {
+          "title": "Learning Groups",
+          "description": "Students can join structured learning groups managed by mentors."
+        },
+        "courses": {
+          "title": "Courses",
+          "description": "Structured educational content organized for progressive learning."
+        },
+        "lectures": {
+          "title": "Lectures",
+          "description": "Course materials and lessons available directly inside the platform."
+        },
+        "quizzes": {
+          "title": "Quizzes & Tests",
+          "description": "Interactive assessments for practicing and checking knowledge."
+        },
+        "programmingTasks": {
+          "title": "Programming Tasks",
+          "description": "Hands-on coding exercises for developing practical programming skills."
+        },
+        "codeEditor": {
+          "title": "Integrated Code Editor",
+          "description": "Programming tasks can be completed directly inside the platform."
+        },
+        "examMode": {
+          "title": "Exam Mode",
+          "description": "Dedicated assessment tools with exam monitoring capabilities."
+        },
+        "statistics": {
+          "title": "Learning Statistics",
+          "description": "Progress and performance information for students and mentors."
+        },
+        "studentWallet": {
+          "title": "Student Wallet",
+          "description": "Built-in balance and transaction management for platform services."
+        },
+        "omuzAI": {
+          "title": "Omuz AI Assistant",
+          "description": "An AI learning assistant powered by OpenAI models."
+        },
+        "aiChat": {
+          "title": "AI Conversations",
+          "description": "Students can ask questions and receive contextual learning assistance."
+        },
+        "voiceMode": {
+          "title": "Voice Interaction",
+          "description": "Communicate with Omuz AI using voice input and spoken responses."
+        },
+        "liveMode": {
+          "title": "Live Mode",
+          "description": "A continuous voice-based interaction mode for more natural communication."
+        },
+        "aiMascot": {
+          "title": "AI Mascot",
+          "description": "A persistent assistant available throughout the platform when help is needed."
+        }
+      },
+      "gallery": {
+        "Authentication": "Authentication",
+        "Group Workspace": "Group Workspace",
+        "Omuz AI Assistant": "Omuz AI Assistant",
+        "Wallet": "Wallet",
+        "Omuz AI": "Omuz AI",
+        "AI Conversation": "AI Conversation",
+        "AI Learning Session": "AI Learning Session",
+        "AuthenticationDesc": "ILM OMUZ login interface",
+        "GroupWorkspaceDesc": "Student group management and learning workspace",
+        "OmuzAIAssistantDesc": "Integrated AI assistant inside the learning platform",
+        "WalletDesc": "Student wallet and transaction management",
+        "OmuzAIDesc": "AI learning assistant home interface",
+        "AIConversationDesc": "Interactive conversation with Omuz AI",
+        "AILearningSessionDesc": "Detailed AI-assisted learning conversation"
+      }
+    }
+  },
+  "services": {
+    "title": "What I Build",
+    "subtitle": "Technical Expertise",
+    "frontend": "Frontend Development",
+    "frontendDesc": "Building responsive, accessible, and highly interactive user interfaces using React and Next.js.",
+    "backend": "Backend & REST APIs",
+    "backendDesc": "Designing robust, scalable server architectures and secure APIs with Node.js and Express.",
+    "fullstack": "Full-Stack Applications",
+    "fullstackDesc": "Delivering end-to-end solutions, connecting complex databases to polished client applications.",
+    "database": "Database Design",
+    "databaseDesc": "Architecting efficient schemas and complex queries using PostgreSQL and Supabase.",
+    "deployment": "Deployment",
+    "deploymentDesc": "Configuring reliable hosting, CI/CD pipelines, and server management using PM2 and modern cloud platforms."
+  },
+  "skills": {
+    "title": "Technologies",
+    "subtitle": "My Tech Stack",
+    "frontend": "Frontend",
+    "backend": "Backend",
+    "database": "Database",
+    "tools": "Tools"
+  },
+  "experience": {
+    "title": "Experience & Education",
+    "subtitle": "My Journey",
+    "present": "Present",
+    "softclubTitle": "Frontend Development Bootcamp",
+    "softclubDesc": "Intensive program focused on modern web development, building production-ready applications.",
+    "rtsuTitle": "Bachelor of Information Systems",
+    "rtsuDesc": "Core computer science concepts, software engineering, and systems architecture."
+  },
+  "contact": {
+    "title": "Get In Touch",
+    "subtitle": "Contact",
+    "description": "I'm currently available for new opportunities. Whether you have a question or just want to say hi, I'll try my best to get back to you!",
+    "button": "Say Hello",
+    "emailLabel": "Email me at:",
+    "phone": "Phone",
+    "callMe": "Call me",
+    "telegram": "Telegram",
+    "messageMe": "Message me",
+    "github": "GitHub",
+    "viewProfile": "View profile",
+    "email": "Email",
+    "emailMe": "Email me"
+  },
+  "footer": {
+    "rights": "All rights reserved.",
+    "built": "Built with"
+  }
+}
