@@ -22,7 +22,8 @@
   "about": {
     "title": "About Me",
     "description1": "I am a Full-Stack Developer with a strong foundation in modern web technologies, specializing in building high-performance, scalable, and beautifully designed applications.",
-    "description2": "My approach combines clean architecture on the backend with polished, accessible interfaces on the frontend. I enjoy solving complex engineering problems and transforming them into seamless user experiences."
+    "description2": "My approach combines clean architecture on the backend with polished, accessible interfaces on the frontend. I enjoy solving complex engineering problems and transforming them into seamless user experiences.",
+    "downloadCv": "Download CV"
   },
   "projects": {
     "sectionTitle": "Selected Work",
