@@ -38,6 +38,20 @@
     "sourceCode": "Source Code",
     "challenge": "Challenge",
     "solution": "Solution",
+    "demoAccount": {
+      "title": "Demo Account",
+      "subtitle": "Use this test account to explore the live application without creating a new account.",
+      "email": "Email",
+      "password": "Password",
+      "role": "Role",
+      "admin": "Admin",
+      "showPassword": "Show password",
+      "hidePassword": "Hide password",
+      "copy": "Copy",
+      "copied": "Copied!",
+      "copyEmail": "Copy email",
+      "copyPassword": "Copy password"
+    },
     "educrm": {
       "type": "Production SaaS / CRM",
       "tagline": "CRM platform for educational centers that centralizes academic management, scheduling, finances and analytics.",

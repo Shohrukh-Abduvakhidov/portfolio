@@ -4,6 +4,7 @@ import * as React from "react";
 import { Moon, Sun } from "lucide-react";
 import { useTheme } from "next-themes";
 import { Button } from "@/components/ui/button";
+import { flushSync } from "react-dom";
 
 export function ThemeToggle() {
   const [mounted, setMounted] = React.useState(false);
@@ -37,7 +38,9 @@ export function ThemeToggle() {
     document.documentElement.style.setProperty("--theme-radius", `${endRadius}px`);
 
     const transition = document.startViewTransition(() => {
-      setTheme(nextTheme);
+      flushSync(() => {
+        setTheme(nextTheme);
+      });
     });
 
     transition.ready.then(() => {
@@ -53,7 +56,8 @@ export function ThemeToggle() {
         {
           duration: 600,
           easing: "cubic-bezier(0.76, 0, 0.24, 1)",
-          pseudoElement: isDark ? "::view-transition-old(root)" : "::view-transition-new(root)"
+          pseudoElement: isDark ? "::view-transition-old(root)" : "::view-transition-new(root)",
+          fill: "forwards"
         }
       );
     });

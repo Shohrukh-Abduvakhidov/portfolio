@@ -4,8 +4,14 @@ import React, { useEffect, useState } from "react";
 import { Lottie } from "lottie-react";
 
 export function DeveloperAnimation() {
-  const [animationData, setAnimationData] = useState<any>(null);
-  const [prefersReducedMotion, setPrefersReducedMotion] = useState(false);
+  const [animationData, setAnimationData] = useState<unknown>(null);
+  
+  const [prefersReducedMotion, setPrefersReducedMotion] = useState(() => {
+    if (typeof window !== "undefined") {
+      return window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    }
+    return false;
+  });
 
   useEffect(() => {
     fetch("/lottie/developer.json")
@@ -16,7 +22,6 @@ export function DeveloperAnimation() {
 
   useEffect(() => {
     const mediaQuery = window.matchMedia("(prefers-reduced-motion: reduce)");
-    setPrefersReducedMotion(mediaQuery.matches);
     const handler = (e: MediaQueryListEvent) => setPrefersReducedMotion(e.matches);
     
     // Add event listener (safari fallback support)

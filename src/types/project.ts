@@ -30,6 +30,7 @@ export interface Project {
   features?: ProjectFeature[];
   featureGroups?: ProjectFeatureGroup[];
   technicalChallenges?: { id?: string; title: string; description?: string; challengeText?: string; solutionText?: string }[];
+  demoCredentials?: { email: string; password: string; role?: string };
   cover: string;
   images: { src: string; label: string; description?: string }[];
   liveUrl?: string;

@@ -8,6 +8,7 @@ import { Button } from "@/components/ui/button";
 import { Reveal } from "@/components/motion/reveal";
 import { StaggerContainer, StaggerItem } from "@/components/motion/stagger";
 import { ProjectGallery } from "@/components/projects/project-gallery";
+import { DemoCredentials } from "@/components/projects/demo-credentials";
 
 import { useLanguage } from "@/i18n/LanguageContext";
 
@@ -79,6 +80,12 @@ export function ProjectCaseStudy({ project, nextProject }: ProjectCaseStudyProps
               </Button>
             )}
           </div>
+          
+          {project.demoCredentials && (
+            <div className="max-w-md">
+              <DemoCredentials {...project.demoCredentials} />
+            </div>
+          )}
         </div>
       </Reveal>
 

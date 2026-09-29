@@ -74,6 +74,11 @@ export const projects: Project[] = [
       { title: "PWA & notifications" },
       { title: "Internationalization" },
     ],
+    demoCredentials: {
+      email: "yokub@gmail.com",
+      password: "yokub_999",
+      role: "Admin"
+    },
     cover: "/projects/educrm/01-header-image.png",
     images: [
       { src: "/projects/educrm/01-dashboard.png", label: "Dashboard" },
@@ -137,6 +142,10 @@ export const projects: Project[] = [
         ],
       },
     ],
+    demoCredentials: {
+      email: "ison12@gmail.com",
+      password: "ison1122"
+    },
     cover: "/projects/ilm-omuz/01-header-image.png",
     images: [
       { src: "/projects/ilm-omuz/02-login.png", label: "Authentication" },
